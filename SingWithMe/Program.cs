@@ -45,6 +45,15 @@ namespace SingWithMe
                     Console.WriteLine("File not found, try again");
                     continue;
                 }
+
+                // Read the file
+                var lines = File.ReadAllLines(fileName);
+                Console.WriteLine("************************");
+                foreach (var line in lines)
+                {
+                    Singer.WriteLine(line)
+                }
+                Console.WriteLine("************************");
             }
         }
     }
